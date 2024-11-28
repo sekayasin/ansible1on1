@@ -1,6 +1,6 @@
 ---
 - name: install vsftpd service
-  hosts: rocky
+  hosts: all
   tasks:
   - name: install vsftpd package
     package:
