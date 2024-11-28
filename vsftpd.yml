@@ -1,0 +1,13 @@
+---
+- name: install vsftpd service
+  hosts: rocky
+  tasks:
+  - name: install vsftpd package
+    package:
+      name: vsftpd
+      state: latest
+  - name: start and enable vsftpd service
+    service:
+      name: vsftpd
+      state: started
+      enabled: yes
